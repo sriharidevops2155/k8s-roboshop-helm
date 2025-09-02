@@ -1,3 +1,6 @@
 statefulset:
   imageUrl: sriharibandidevops/catalogue
   imageVersion: v1
+hpa:
+  maxReplicas: 10
+  utilisation: 75

@@ -9,11 +9,11 @@ spec:
     kind: Deployment
     name: catalogue
   minReplicas: 1
-  maxReplicas: 10
+  maxReplicas:  {{ .Values.hpa.maxReplicas }}
   metrics:
   - type: Resource
     resource:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 10
+        averageUtilization: {{ .Values.hpa.utilisation }}
