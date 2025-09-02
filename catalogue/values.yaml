@@ -1,4 +1,4 @@
-statefulset:
+deployment:
   imageUrl: sriharibandidevops/catalogue
   imageVersion: v1
 hpa:
